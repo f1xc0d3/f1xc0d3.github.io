@@ -1,0 +1,23 @@
+@keyframes blink {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+.help {
+		font-family: monospace;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		font-size: 14px;
+		line-height: 100%;
+		color: #fff;
+		background: #00000000 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="70" height="20" fill="rgba(255, 255, 255, 0.9)" ><text x="0" y="50%" font-size="14px" font-family="monospace">помогите</text></svg>') repeat;
+		animation: blink 0.0001s steps(1, end) infinite;
+}
