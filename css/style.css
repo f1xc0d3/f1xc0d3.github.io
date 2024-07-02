@@ -1,0 +1,210 @@
+* {
+		margin: 0;
+		padding: 0;
+		cursor: none;
+}
+body
+{
+		background: #000000;
+		user-select: none;
+                max-width:100%;
+}
+.about {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	
+}
+
+.avatar img {
+	width:100px;
+	margin-bottom:3%;
+	height:auto;
+	/* box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 75px 5px; */
+	border-radius:0%
+	
+}
+
+.nickname {
+	position: relative;
+	white-space: nowrap;
+	margin-top: -5%;
+	margin-bottom: 3%;
+	font-family: monospace;
+	font-size: 45px;
+	font-weight: bold;
+	color: azure;
+}
+
+.pronouns {
+	position: relative;
+	bottom: 5px;
+	white-space: nowrap;
+	font-family: monospace;
+	font-size: 15px;
+	color:gray;
+	font-weight: normal
+	}
+
+
+.age {
+	margin-bottom: 3%;
+	font-family: monospace;
+	font-size: 18px;
+	white-space: nowrap;
+	color: azure;
+}
+
+.description {
+	margin-bottom: 8%;
+	font-family: monospace;
+	font-size: 18px;
+	white-space: nowrap;
+	color: azure;
+}
+
+.words {
+	margin-bottom: 12%;
+	min-height: 30.4px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	font-family: monospace;
+	font-size:  18px;
+	white-space: nowrap;
+	color: azure;
+}
+
+.typed-words {
+	position: absolute;
+	min-height: 30.4px;
+	font-size: 18px;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -30%);
+}
+
+.glitchtext {
+	color: rgba(255, 255, 255, 0.9);
+	text-shadow: 1.2px 0 #dc3333;
+}
+
+.links {
+	position: relative;
+	/* спустить блок вниз на 25 пикселей */
+	left: 50%;
+	top: 105%;
+	transform: translate(-50%, 0%);
+}
+
+.social {
+	margin-bottom: 3%;
+	font-family: monospace;
+	font-size: 15px;
+	white-space: nowrap;
+	
+}
+
+.seperator {
+	margin-right: 3px;
+	margin-bottom: 3%;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 15px;
+	white-space: nowrap;
+	color: rgb(200, 200, 200);
+}
+
+.other-pages {
+	margin-right: 3px;
+	font-family: monospace;
+	font-size: 15px;
+	white-space: nowrap;
+}
+
+.stars, .twinkling {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+/* cursor */
+.mscursor-cursor {
+	/* переместить сам курсор */
+	transform: translateX(5px);
+		translate: -3px 0px;
+		pointer-events: none;
+		position: fixed;
+		display: block;
+		border-radius: 0;
+		z-index: 9999999999999999;	
+	}
+	.mscursor-difference{
+		mix-blend-mode: difference;
+	}
+	.mscursor-circle {
+		transform: translateX(5px);
+			transform-origin: center;
+			position: absolute;
+			display: block;
+			width: 4px;
+			height: 4px;
+			border-radius: 8px;
+			
+	}
+
+	.mscursor-border-transform{
+		animation: border-transform 2s linear infinite;
+		/* переместить вниз и вправо хвост*/
+		transform: translateX(2px);
+		translate: 8px 10px;
+	}
+	@keyframes border-transform {
+		0%,
+		100% {
+			border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+		}
+		14% {
+			border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+		}
+		28% {
+			border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+		}
+		42% {
+			border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+		}
+		56% {
+			border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+		}
+		70% {
+			border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+		}
+		84% {
+			border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+		}
+	}
+
+.hidden {
+		.mscursor-circle {
+			opacity: 0;
+		}
+
+}
+
+.stars {
+	background:#000 url(https://i.postimg.cc/hhFD7Nkf/apps-47636-13819498107583324-fb06b53a-4974-4acb-85e6-f6f363f85ab6-edec48d0-ec35-4a1f-8bf5-c455987b4a.png) repeat top center;
+	z-index: 0;
+}
+
+.twinkling {
+	background-image: url(https://i.postimg.cc/CLpNr4PF/twinkling.png);
+	animation: 3s twinkle infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes twinkle {
+	from {backrgound-position: 0}
+	to {background-position: -100px 0}
+}
