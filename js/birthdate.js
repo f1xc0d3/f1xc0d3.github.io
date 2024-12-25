@@ -8,8 +8,8 @@ function age() {
 		let ageInMilliseconds = currentDate - birthDateObj;
 		let ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
 
-		document.getElementById("age").innerHTML = (ageInYears).toFixed(9).replace(".", ",") + " y.o.";
+		document.getElementById("age").innerHTML = (ageInYears).toFixed(7).replace(".", ",") + " y.o.";
 }
 
 age()
-setInterval(age, 25)
+setInterval(age, 900)
