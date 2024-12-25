@@ -12,4 +12,4 @@ function age() {
 }
 
 age()
-setInterval(age, 100)
+setInterval(age, 10)
